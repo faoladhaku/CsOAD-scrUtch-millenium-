@@ -1,24 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>scrutch</class>
- <widget class="QMainWindow" name="scrutch" >
-  <property name="geometry" >
+ <widget class="QMainWindow" name="scrutch">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>852</width>
+    <height>487</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>scrutch</string>
   </property>
-  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>261</width>
+      <height>431</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>852</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Archivo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="action_Nuevo"/>
+    <addaction name="action_Abrir"/>
+    <addaction name="action_Guardar"/>
+    <addaction name="actionGuardar_Como"/>
+    <addaction name="action_Notas_de_Proyecto"/>
+    <addaction name="actionA_bandonar"/>
+   </widget>
+   <widget class="QMenu" name="menu_Editar">
+    <property name="title">
+     <string>&amp;Editar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Compartir">
+    <property name="title">
+     <string>&amp;Compartir</string>
+    </property>
+    <addaction name="action_Compartir_en_linea"/>
+    <addaction name="action_Ir_al_Sitio_Web_de_Scratch"/>
+   </widget>
+   <widget class="QMenu" name="menuA_yuda">
+    <property name="title">
+     <string>A&amp;yuda</string>
+    </property>
+    <addaction name="action_Pagina_de_Ayuda"/>
+    <addaction name="action_Acerca_de_Scratch"/>
+   </widget>
+   <addaction name="menu_Archivo"/>
+   <addaction name="menu_Editar"/>
+   <addaction name="menu_Compartir"/>
+   <addaction name="menuA_yuda"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="action_Nuevo">
+   <property name="text">
+    <string>&amp;Nuevo</string>
+   </property>
+  </action>
+  <action name="action_Abrir">
+   <property name="text">
+    <string>&amp;Abrir</string>
+   </property>
+  </action>
+  <action name="action_Guardar">
+   <property name="text">
+    <string>&amp;Guardar</string>
+   </property>
+  </action>
+  <action name="actionGuardar_Como">
+   <property name="text">
+    <string>Guardar &amp;Como</string>
+   </property>
+  </action>
+  <action name="action_Notas_de_Proyecto">
+   <property name="text">
+    <string>&amp;Notas de Proyecto</string>
+   </property>
+  </action>
+  <action name="actionA_bandonar">
+   <property name="text">
+    <string>A&amp;bandonar</string>
+   </property>
+  </action>
+  <action name="action_Compartir_en_linea">
+   <property name="text">
+    <string>&amp;Compartir en linea</string>
+   </property>
+  </action>
+  <action name="action_Ir_al_Sitio_Web_de_Scratch">
+   <property name="text">
+    <string>&amp;Ir al Sitio Web de Scratch</string>
+   </property>
+  </action>
+  <action name="action_Pagina_de_Ayuda">
+   <property name="text">
+    <string>&amp;Pagina de Ayuda</string>
+   </property>
+  </action>
+  <action name="action_Acerca_de_Scratch">
+   <property name="text">
+    <string>&amp;Acerca de Scratch</string>
+   </property>
+  </action>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
