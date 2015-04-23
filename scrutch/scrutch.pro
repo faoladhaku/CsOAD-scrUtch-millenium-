@@ -15,6 +15,7 @@ TEMPLATE = app
 SOURCES += main.cpp\
         scrutch.cpp
 
-HEADERS  += scrutch.h
+HEADERS  += scrutch.h \
+    smpointer.h
 
 FORMS    += scrutch.ui
