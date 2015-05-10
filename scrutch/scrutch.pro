@@ -16,6 +16,9 @@ SOURCES += main.cpp\
         scrutch.cpp
 
 HEADERS  += scrutch.h \
-    smpointer.h
+    smpointer.h \
+    ifclass.h \
+    operators.h \
+    bool.h
 
 FORMS    += scrutch.ui
