@@ -15,32 +15,27 @@ private:
 
 C operators::plus(A, B)
 {
-  C sumar;
-  sumar = A + B;
+  auto sumar = A + B;
   return sumar;
 }
 C operators::difference(A, B)
 {
-  C restar;
-  restar = A - B;
+  auto restar = A - B;
   return restar;
 }
 C operators::cross(A, B)
 {
-  C multiplicar;
-  multiplicar = A * B;
+  auto multiplicar = A * B;
   return multiplicar;
 }
 C operators::divide(A, B)
 {
-  C dividir;
-  dividir = A / B;
-  return divide;
+  auto dividir = A / B;
+  return dividir;
 }
 C operators::module(A, B)
 {
-  C modulo;
-  modulo = (A -(A/B))/ B;
+  auto modulo = (A -(A/B))/ B;
   return modulo;
 }
 
