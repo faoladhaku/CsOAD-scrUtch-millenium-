@@ -17,7 +17,6 @@ SOURCES += main.cpp\
 
 HEADERS  += scrutch.h \
     smpointer.h \
-    ifclass.h \
     operators.h \
     bool.h
 
