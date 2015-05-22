@@ -1,42 +1,50 @@
 #ifndef OPERATORS
 #define OPERATORS
-template <typename A,typename B,typename C>
+#include <math.h>
+template <typename Operando1,typename Operando2,typename Respuesta>
 class operators
 {
 public:
 
 private:
- C plus(A,B);
- C difference(A,B);
- C cross(A,B);
- C divide(A,B);
- C module(A,B);
+ Respuesta plus(Operando1,Operando2);
+ Respuesta difference(Operando1,Operando2);
+ Respuesta cross(Operando1,Operando2);
+ Respuesta divide(Operando1,Operando2);
+ Respuesta module(Operando1,Operando2);
+ Respuesta rounds(Operando1);
 };
 
-C operators::plus(A, B)
+Respuesta operators::plus(Operando1, Operando2)
 {
-  auto sumar = A + B;
+  auto sumar = round(Operando1 + Operando2);
   return sumar;
 }
-C operators::difference(A, B)
+Respuesta operators::difference(Operando1, Operando2)
 {
-  auto restar = A - B;
+  auto restar = round(Operando1 - Operando2);
   return restar;
 }
-C operators::cross(A, B)
+Respuesta operators::cross(Operando1, Operando2)
 {
-  auto multiplicar = A * B;
+  auto multiplicar = round(Operando1 * Operando2);
   return multiplicar;
 }
-C operators::divide(A, B)
+Respuesta operators::divide(Operando1, Operando2)
 {
-  auto dividir = A / B;
+  auto dividir = round(Operando1 / Operando2);
   return dividir;
 }
-C operators::module(A, B)
+Respuesta operators::module(Operando1, Operando2)
 {
-  auto modulo = (A -(A/B))/ B;
+  auto modulo = round((Operando1 -(Operando1/Operando2))/ Operando2);
   return modulo;
+}
+Respuesta operators::rounds(Operando1)
+{
+
+  auto redondear = round(Operando1);
+  return redondear;
 }
 
 #endif // OPERATORS

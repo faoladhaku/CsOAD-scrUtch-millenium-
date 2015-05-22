@@ -19,6 +19,7 @@ HEADERS  += scrutch.h \
     smpointer.h \
     operators.h \
     bool.h \
-    cadena.h
+    cadena.h \
+    functions.h
 
 FORMS    += scrutch.ui

@@ -1,20 +1,20 @@
 #ifndef BOOL
 #define BOOL
-template <typename D,typename E,typename F>
+template <typename Operando1,typename Operando2,typename Respuesta>
 class bools
 {
 private:
 public:
-  F bigger(D,E);
-  F lower(D,E);
-  F equal(D,E);
-  F andd(D,E);
-  F ord(D,E);
-  F notd(D);
+  Respuesta bigger(Operando1,Operando2);
+  Respuesta lower(Operando1,Operando2);
+  Respuesta equal(Operando1,Operando2);
+  Respuesta andd(Operando1,Operando2);
+  Respuesta ord(Operando1,Operando2);
+  Respuesta notd(Operando1);
 };
-F bools::bigger(D, E)
+Respuesta bools::bigger(Operando1, Operando2)
 {
-  if (D > E)
+  if (Operando1 > Operando2)
     {
       return true;
     }
@@ -23,9 +23,9 @@ F bools::bigger(D, E)
       return false;
     }
 }
-F bools::lower(D, E)
+Respuesta bools::lower(Operando1, Operando2)
 {
-    if (D < E)
+    if (Operando1 < Operando2)
       {
         return true;
       }
@@ -34,9 +34,9 @@ F bools::lower(D, E)
         return false;
       }
 }
-F bools::equal(D, E)
+Respuesta bools::equal(Operando1, Operando2)
 {
-  if (D == E)
+  if (Operando1 == Operando2)
     {
       return true;
     }
