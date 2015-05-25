@@ -20,6 +20,7 @@ HEADERS  += scrutch.h \
     operators.h \
     bool.h \
     cadena.h \
-    functions.h
+    functions.h \
+    template_names.h
 
 FORMS    += scrutch.ui

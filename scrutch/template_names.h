@@ -1,0 +1,5 @@
+#ifndef TEMPLATE_NAMES
+#define TEMPLATE_NAMES
+
+#endif // TEMPLATE_NAMES
+
