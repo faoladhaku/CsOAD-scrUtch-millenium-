@@ -3,11 +3,54 @@
 
 #include <cstring>
 #include <iostream>
+#include <vector>
+#include <algorithm>
+
 using namespace std;
 
-typedef int E;
-typedef char C;
 
+typename int Ent;
+typename char Car;
+
+class cadenas
+{
+private:
+    Car palabra;
+    vector<Car> cadena;
+public:
+    cadenas();
+    Car concatenar(Car*);
+    Ent tamano();
+    void mostrar(Ent);
+
+};
+cadenas::cadenas()
+{
+    cin>>palabra;
+    cadena.push_back(palabra)
+}
+
+Car cadenas::concatenar(Char *cad )
+{
+    cadena.push_back(cad);
+    return cadena;
+}
+
+Ent cadenas::tamano()
+{
+    Ent aux;
+    aux=cadena.size();
+    return aux;
+}
+
+void cadenas::mostrar(Ent lugar)
+{
+    cout<<cadena[lugar];
+}
+
+
+
+/*
 class cadena
 {
 private:
@@ -41,7 +84,7 @@ void cadena::caracter (E x)
 
 void cadena::mostrar()
 {
-    cout<<cad<<endl;
+   cout<<cad<<endl;
 }
 
 E cadena::longitud()
@@ -55,7 +98,7 @@ cadena cadena::concatenar(cadena y)
     C *nueva=strcat(cad,y.cad);
     cadena w(nueva,20);
     return w;
-}
+*/
 
 #endif // CADENA
 
