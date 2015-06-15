@@ -1,5 +1,6 @@
 #ifndef BOOL
 #define BOOL
+#include "template_names.h"
 template <typename Operando1,typename Operando2,typename Respuesta>
 class bools
 {

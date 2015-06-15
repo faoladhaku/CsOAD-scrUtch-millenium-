@@ -21,6 +21,7 @@ HEADERS  += scrutch.h \
     bool.h \
     cadena.h \
     functions.h \
-    template_names.h
+    template_names.h \
+    controller.h
 
 FORMS    += scrutch.ui
