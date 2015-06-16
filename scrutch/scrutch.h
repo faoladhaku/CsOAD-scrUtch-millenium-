@@ -15,6 +15,9 @@ public:
     explicit scrutch(QWidget *parent = 0);
     ~scrutch();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::scrutch *ui;
 };
