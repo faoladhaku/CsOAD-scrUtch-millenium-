@@ -1,10 +1,15 @@
 #include "scrutch.h"
 #include <QApplication>
+#include "screen.h"
+
+screen *pantalla;
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    scrutch w;
-    w.show();
+    pantalla = new screen ();
+    pantalla->show();
+    //scrutch w;
+    //w.show();
     return a.exec();
 }

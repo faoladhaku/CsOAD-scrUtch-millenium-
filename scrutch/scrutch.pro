@@ -13,7 +13,8 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        scrutch.cpp
+        scrutch.cpp \
+    screen.cpp
 
 HEADERS  += scrutch.h \
     smpointer.h \
@@ -22,6 +23,10 @@ HEADERS  += scrutch.h \
     cadena.h \
     functions.h \
     template_names.h \
-    controller.h
+    controller.h \
+    screen.h
 
 FORMS    += scrutch.ui
+
+RESOURCES += \
+    resources.qrc
