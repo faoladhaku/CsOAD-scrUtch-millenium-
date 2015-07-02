@@ -14,7 +14,8 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         scrutch.cpp \
-    screen.cpp
+    screen.cpp \
+    boton.cpp
 
 HEADERS  += scrutch.h \
     smpointer.h \
@@ -24,7 +25,8 @@ HEADERS  += scrutch.h \
     functions.h \
     template_names.h \
     controller.h \
-    screen.h
+    screen.h \
+    boton.h
 
 FORMS    += scrutch.ui
 

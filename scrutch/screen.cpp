@@ -3,11 +3,11 @@
 screen::screen(QWidget *parent)
 {
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    setFixedSize(1024,768);
+    //setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    setFixedSize(900,600);
 
     scene = new QGraphicsScene();
-    scene->setSceneRect(0,0,104,768);
+    //scene->setSceneRect(10,10,100,100);
     setScene(scene);
 
 }

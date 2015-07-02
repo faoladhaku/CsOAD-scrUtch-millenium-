@@ -4,6 +4,7 @@
 #include <QGraphicsView>
 #include <QGraphicsScene>
 
+
 class screen :public QGraphicsView
 {
 public:
@@ -11,13 +12,6 @@ public:
     screen (QWidget *parent = NULL);
     //atributos
     QGraphicsScene *scene;
-/*private:
-
-    void dragEnterEvent(QDragEnterEvent *event);
-    void dragMoveEvent(QDragMoveEvent *event) ;
-    void dropEvent(QDropEvent *event);
-    void mousePressEvent(QMouseEvent *event);
-*/
 };
 
 #endif // SCREEN_H

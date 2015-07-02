@@ -5,23 +5,20 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <template_names.h>
 
 using namespace std;
-
-
-template<typename Ent>;
-template<typename Car>;
 
 class cadenas
 {
 private:
-    Car palabra;
-    vector<Car> cadena;
+    caracter palabra;
+    vector<caracter> cadena;
 public:
     cadenas();
-    Car concatenar(Car*);
-    Ent tamano();
-    void mostrar(Ent);
+    caracter concatenar(caracter*);
+    entero tamano();
+    void mostrar(entero);
 
 };
 cadenas::cadenas()
@@ -30,23 +27,22 @@ cadenas::cadenas()
     cadena.push_back(palabra)
 }
 
-Car cadenas::concatenar(Char *cad )
+caracter cadenas::concatenar(caracter *cad )
 {
     cadena.push_back(cad);
     return cadena;
 }
 
-Ent cadenas::tamano()
+entero cadenas::tamano()
 {
-    Ent aux;
+    auto aux;
     aux=cadena.size();
     return aux;
 }
 
-void cadenas::mostrar(Ent lugar)
+void cadenas::mostrar(entero lugar)
 {
     cout<<cadena[lugar];
 }
 
 #endif // CADENA
-
