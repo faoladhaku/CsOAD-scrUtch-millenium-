@@ -24,9 +24,9 @@ HEADERS  += scrutch.h \
     cadena.h \
     functions.h \
     template_names.h \
-    controller.h \
     screen.h \
-    boton.h
+    boton.h \
+    dtoscrutch.h
 
 FORMS    += scrutch.ui
 
