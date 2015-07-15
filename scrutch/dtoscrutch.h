@@ -1,43 +1,76 @@
-#ifndef DTOSCRUTCH
-#define DTOSCRUTCH
+#ifndef DTOSCRUTCH_H
+#define DTOSCRUTCH_H
 #include <List>
+#include <vector>
+using namespace std;
 template <typename T>
 class blocks
 {
 private:
-  int bloqueP;
-  int idP;
-  int functionP;
+  int bloque;
+  int id;
+  int parameters;
 public:
-  auto setbloqueP();
-  auto setidP();
-  auto setfunctionP();
+  auto setbloque(T bloqueG);
+  auto setid(T idG);
+  auto setparameters(T parameters);
+  auto getbloque();
+  auto getid();
+  auto getparameters();
+  //auto getreaction();
 };
 
-auto blocks::setbloqueP()
+auto blocks::setbloque(T bloqueG)
 {
-  setbloqueG
+  this->bloque = bloqueG;
 }
-auto blocks::setidP()
+auto blocks::setid(T idG)
 {
-
+  this->id = idG;
 }
-auto blocks::setfunctionP()
+auto blocks::setparameters(T parameterG)
 {
-
+  this->parameters = parameterG;
 }
 
+auto blocks::getbloque()
+{
+  return this->bloque;
+}
+auto blocks::getid()
+{
+  return this->id;
+}
+
+auto blocks::getparameters()
+{
+  return this->parameters;
+}
+
+/*auto blocks::getreaction()
+{
+  blocks *bloque = new blocks();
+  list<int> desempaqueta;
+  desempaqueta.push_front(*bloque)
+
+}*/
 class DTOSCRUTCH : public blocks
 {
 private:
-  vector<blocks> bloque;
+  blocks *bloque = new blocks();
+  vector<int> empaqueta;
 public:
-  DTOSCRUTCH(*bloque);
+ DTOSCRUTCH();
 };
-DTOSCRUTCH::DTOSCRUTCH(*bloque)
+DTOSCRUTCH::DTOSCRUTCH()
 {
-
+  vector<int> empaqueta;
+  empaqueta.push_back(bloque->getbloque);
+  empaqueta.push_back(bloque->getid);
+  empaqueta.push_back(bloque->getparameters);
 }
 
-#endif // DTOSCRUTCH
+#endif // DTOSCRUTCH_H
+
+
 

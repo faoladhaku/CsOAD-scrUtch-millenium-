@@ -26,7 +26,8 @@ HEADERS  += scrutch.h \
     template_names.h \
     screen.h \
     boton.h \
-    dtoscrutch.h
+    dtoscrutch.h \
+    bloquesp.h
 
 FORMS    += scrutch.ui
 
