@@ -15,7 +15,10 @@ TEMPLATE = app
 SOURCES += main.cpp\
         scrutch.cpp \
     screen.cpp \
-    boton.cpp
+    boton.cpp \
+    drop.cpp \
+    drag.cpp \
+    principal.cpp
 
 HEADERS  += scrutch.h \
     smpointer.h \
@@ -26,7 +29,10 @@ HEADERS  += scrutch.h \
     template_names.h \
     controller.h \
     screen.h \
-    boton.h
+    boton.h \
+    drop.h \
+    drag.h \
+    principal.h
 
 FORMS    += scrutch.ui
 

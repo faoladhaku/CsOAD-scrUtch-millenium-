@@ -17,7 +17,4 @@ scrutch::~scrutch()
     delete ui;
 }
 
-void scrutch::on_pushButton_clicked()
-{
 
-}

@@ -12,7 +12,7 @@ class scrutch : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit scrutch(QWidget *parent = 0);
+    explicit scrutch(QWidget *parent = NULL);
     ~scrutch();
 
 private slots:

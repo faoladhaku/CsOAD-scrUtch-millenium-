@@ -1,26 +1,22 @@
-#include "scrutch.h"
 #include <QApplication>
 #include "screen.h"
-#include <boton.h>
-
-//screen *pantalla;
+class screen;
 
 int main(int argc, char *argv[])
 {
-    //Q_INIT_RESOURCE(scrutch);
-    QApplication a(argc, argv);
-    //pantalla = new screen ();
-    //pantalla->show();
-    //scrutch w;
-    //w.show();
-    QWidget Escenas;
-    QHBoxLayout *horizontalLayout = new QHBoxLayout;
-    horizontalLayout->addWidget(new boton);
-    horizontalLayout->addWidget(new boton);
+    Q_INIT_RESOURCE(resources);
 
-    Escenas.setLayout(horizontalLayout);
-    Escenas.setWindowTitle(QObject::tr("Scratch"));
-    Escenas.show();
+    QApplication a(argc, argv);
+    screen newScreen;
+    /*QString fileName;
+
+        if (argc >= 2)
+            fileName = argv[1];
+        else
+            fileName = ".";
+
+        secciones tabdialog(fileName);
+        tabdialog.show();*/
 
     return a.exec();
 }

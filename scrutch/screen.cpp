@@ -1,13 +1,23 @@
 #include "screen.h"
+#include <QGraphicsScene>
+#include <iostream>
 
-screen::screen(QWidget *parent)
+using namespace std;
+
+screen::screen()
 {
-    setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    //setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    setFixedSize(900,600);
+    derecha = new drag;
+    izquierda = new drop;
+    gato =new principal;
+    horizontalLayout = new QHBoxLayout;
+    horizontalLayout->addWidget(derecha);
+    horizontalLayout->addWidget(izquierda);
+    horizontalLayout->addWidget(gato);
 
-    scene = new QGraphicsScene();
-    //scene->setSceneRect(10,10,100,100);
-    setScene(scene);
-
+    Escenas.setLayout(horizontalLayout);
+    Escenas.setWindowTitle(QObject::tr("Scratch"));
+    Escenas.show();
 }
+
+
+

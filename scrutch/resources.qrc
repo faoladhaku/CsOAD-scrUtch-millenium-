@@ -1,5 +1,13 @@
 <RCC>
     <qresource prefix="/image">
         <file>Imagenes/gato.png</file>
+        <file>Imagenes/girar_derecha.png</file>
+        <file>Imagenes/mover.png</file>
+        <file>Imagenes/girar_izquierda.png</file>
+        <file>Imagenes/cambiar_x.png</file>
+        <file>Imagenes/cambiar_y.png</file>
+        <file>Imagenes/dirigir_a.png</file>
+        <file>Imagenes/fijar_x.png</file>
+        <file>Imagenes/fijar_y.png</file>
     </qresource>
 </RCC>
