@@ -12,14 +12,5 @@ public:
     drag(QWidget *parent= NULL);
     void dropEvent(QDropEvent *ev) Q_DECL_OVERRIDE;
 };
-/*
-class secciones:public QDialog
-{
-public:
-    explicit secciones(const QString &fileName, QWidget *parent = 0);
-private:
-    QTabWidget *tabWidget;
 
-};
-*/
 #endif // DRAG_H

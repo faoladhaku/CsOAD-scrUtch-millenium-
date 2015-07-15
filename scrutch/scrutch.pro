@@ -27,12 +27,16 @@ HEADERS  += scrutch.h \
     cadena.h \
     functions.h \
     template_names.h \
-    controller.h \
     screen.h \
     boton.h \
+<<<<<<< HEAD
     drop.h \
     drag.h \
     principal.h
+=======
+    dtoscrutch.h \
+    bloquesp.h
+>>>>>>> origin/master
 
 FORMS    += scrutch.ui
 
